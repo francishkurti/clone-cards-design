@@ -1,0 +1,248 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	background: #adb5bd;
+	background-size: cover;
+	display: grid;
+	place-items: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* * SLIDER */
+
+.mySlides {
+	display: none;
+	box-shadow: 0 10px 10px rgb(0, 0, 0, 0.4);
+}
+
+.slider img {
+	display: flex;
+	aspect-ratio: 1 / 1;
+	justify-content: center;
+	align-content: center;
+	left: 35vh;
+	top: 30vh;
+	border-radius: 5px;
+	height: 500px;
+	width: auto;
+	position: relative;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 20%;
+	left: 69.420vh;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+/* * UI */
+
+.ui nav {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: #e9ecef;
+	padding: 100px 80px;
+	margin-top: 210px;
+	box-shadow: 0 10px 10px rgb(0, 0, 0, 0.4);
+}
+
+.noselect {
+	align-self: flex-start;
+	margin-left: 20px;
+}
+
+.ui nav div,
+nav p,
+nav h2,
+nav h3,
+nav a {
+	margin-bottom: 20px;
+}
+
+.ui nav h2 {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.ui nav .description {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+/* * STARS & PRICE */
+
+.ui nav .stars {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	margin-left: 50px;
+}
+
+.ui nav .stars iconify-icon {
+	margin-right: 5px;
+	color: rgb(255, 217, 0);
+}
+
+.ui nav .price {
+	float: right;
+}
+
+.container_sp {
+	display: flex;
+	gap: 20px;
+}
+
+/* * UI Container */
+
+.container-img_ui {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 230px;
+	margin-right: 50vh;
+}
+
+.slider,
+.ui {
+	width: 100%;
+}
+
+.stars,
+.price {
+	margin-right: 50px;
+	font-size: 24px;
+}
+
+
+/* * CHART */
+
+.container-img_ui .ui .chart {
+	padding: 10px 40px;
+	border-radius: 25px;
+	background: linear-gradient(to bottom, orange, red);
+	text-decoration: none;
+	opacity: 0.8;
+	color: white;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.container-img_ui .ui .chart:hover {
+	text-decoration: none;
+	opacity: 1;
+	color: white;
+}
+
+/* * SIZE */
+
+.container-img_ui .ui .size a {
+	margin: 30px;
+	text-decoration: none;
+}
+
+.container-img_ui .ui .size a:hover {
+	background: red;
+	margin: 30px;
+	text-decoration: none;
+}
+
+/* * WISHLIST */
+
+.container-img_ui .ui .wishlist {
+	color: black;
+}
+
+.container-img_ui .ui .wishlist:hover {
+	color: black;
+}
+
+/* * SIZE & COLORS  */
+
+.selector {
+	display: flex;
+	gap: 50px;
+}
+
+.size-selector button,
+.color-selector button {
+	width: 30px;
+	height: 30px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.color-selector{
+	display: flex;
+	align-items: center;
+}
+
+.size-selector button {
+	background-color: #fadde1;
+}
+
+.color-selector button.red {
+	background-color: red;
+}
+
+.color-selector button.purple {
+	background-color: purple;
+}
+
+.color-selector button.green {
+	background-color: green;
+}
+
+.size-selector button.selected,
+.color-selector button.selected {
+	border: 2px solid #000;
+	opacity: 0.7;
+}
+
+.size-selector {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.size-selector button {
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+
+.size-selector button.selected {
+	background-color: #666;
+	color: #fff;
+}
+
+
